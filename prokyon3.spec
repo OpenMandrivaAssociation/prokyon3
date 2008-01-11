@@ -86,17 +86,7 @@ bzcat %{SOURCE2} > ${RPM_BUILD_ROOT}%{_iconsdir}/%{name}.png
 bzcat %{SOURCE3} > ${RPM_BUILD_ROOT}%{_liconsdir}/%{name}.png
 
 # Install menu entry
-install -d ${RPM_BUILD_ROOT}%{_menudir}
 
-cat << EOF > ${RPM_BUILD_ROOT}%{_menudir}/%{name}
-?package(%{name}): needs="x11" \\
-		   section="Multimedia/Sound" \\
-		   longtitle="%{summary}" \\
-		   title="Prokyon3" \\
-		   icon="%{name}.png" \\
-		   command="%{_bindir}/%{name}" \\
-           xdg="true"
-EOF
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -141,7 +131,6 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_datadir}/%{name}/html/manual_one_file/images/docbook/*.png
 
 %{_datadir}/applications/mandriva-%{name}.desktop
-%{_menudir}/%{name}
 
 %{_iconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
