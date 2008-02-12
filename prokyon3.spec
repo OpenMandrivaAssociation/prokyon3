@@ -52,7 +52,7 @@ Prokyon3 key features are:
      * manages files on harddisk/CDROM or over network        
      * search the database by artist, song, album, filename...	  
      * very comfortable editor for ID3 tags			  
-     * manages favorite artists and sampler/soundtracks                                  
+     * manages favorite artists and sampler/soundtracks
      * plays and enqueues MP3 files with XMMS or any other player           
      * uses MySQL as database back end
      * configuration editor and database wizard
