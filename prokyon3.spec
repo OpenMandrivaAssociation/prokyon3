@@ -1,6 +1,6 @@
 %define name prokyon3
 %define version 0.9.4
-%define release %mkrel 4
+%define release %mkrel 6
 
 Summary:   	An MP3/Ogg manager and tag editor
 Name:      	%{name}
