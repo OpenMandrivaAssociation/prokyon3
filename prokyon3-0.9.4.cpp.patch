@@ -1,0 +1,28 @@
+Index: src/configuration.h
+===================================================================
+--- src/configuration.h
++++ src/configuration.h	2006-08-08 01:50:34.262910202 +0200
+@@ -159,8 +159,8 @@
+   ~Configuration();
+ 
+  private:
+-  QValueList<int> Configuration::listString2Int( QStringList qs);
+-  QStringList Configuration::listInt2String( QValueList<int> qi);
++  QValueList<int> listString2Int( QStringList qs);
++  QStringList listInt2String( QValueList<int> qi);
+   int startuptip, readid3v2, writeid3v2, autoconn, autohide, avoidhdd, avoidsmb, avoidnfs;
+ #ifdef HAVE_MEXTRAS
+   int checkartist, checkcover, checklyrics, checkalbum, checktracks, checkbiography, checkyears;
+Index: src/progressdialogscroll.h
+===================================================================
+--- src/progressdialogscroll.h
++++ src/progressdialogscroll.h	2006-08-08 01:51:36.234445813 +0200
+@@ -32,7 +32,7 @@
+ 		        setMinimumHeight( 200 ); 
+ 		        setMinimumWidth( 500 );
+               }
+-   void ProgressDialogScroll::resizeEvent( QResizeEvent *ev ) {
++   void resizeEvent( QResizeEvent *ev ) {
+                      QProgressDialog::resizeEvent( ev );
+ 		     QRect rct = static_cast<QWidget*>(this->child("label","QLabel"))->geometry();
+                      rct.setTop(2);
