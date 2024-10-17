@@ -14,7 +14,7 @@ Patch0:		%{name}-%{version}-nl.po-patch
 Patch1:     prokyon3-0.9.4.cpp.patch
 Group: 	   	Sound
 License:   	GPL
-URL:       	http://%{name}.sourceforge.net/
+URL:       	https://%{name}.sourceforge.net/
 Buildroot: 	%{_tmppath}/%{name}-buildroot
 Requires:	MySQL-Max
 Requires:	cdrecord
