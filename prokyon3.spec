@@ -21,6 +21,11 @@ Requires:	cdrecord
 Requires:	mpg123
 Requires:	normalize
 Requires:	vorbis-tools
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	X11-devel
 BuildRequires:	gettext-devel
 BuildRequires:	libid3-devel
